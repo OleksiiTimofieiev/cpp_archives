@@ -7,3 +7,7 @@
 - int & get <- a return int function;
 
 - header file <- "*.hpp";
+
+- constructor is a method to init a structure;
+- in order to create a constructor we have to make a func (void) with a same name as a struct (seems to be the same identifier);
+- x = (y = 0);

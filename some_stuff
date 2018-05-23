@@ -1,0 +1,9 @@
+- "this->" operator for havin an access to the var;
+
+- srtuct Point {var, var, void shift(...);}
+- declaration of the method: void shift(...);
+- description of the method: void Point::shift{...};
+
+- int & get <- a return int function;
+
+- header file <- "*.hpp";

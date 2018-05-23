@@ -11,3 +11,16 @@
 - constructor is a method to init a structure;
 - in order to create a constructor we have to make a func (void) with a same name as a struct (seems to be the same identifier);
 - x = (y = 0);
+- constructors are being invoked automaticall during the var declaration;
+
+- set as default:
+
+constructor -> Point(double x = 0, double y = 0) -> with no params => will be set to 0;
+	: x(x), y(y)
+	{}
+- segment () {} -> vars of segment will be set to 0;
+- explicit -> to forbid;
+
+- destructor <- to delete a struct;
+- destructor <-> ~asdf() {delete [] data}
+- destructor will be executed after the end of the function block;

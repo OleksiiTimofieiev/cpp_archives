@@ -1,0 +1,6 @@
+- access to the fiels and methods can be limiter -> for encapsulation maybe;
+
+- if we use class id -> all vars and methods will be set to private;
+- we can set some vars or methods to public;
+
+- public interface a class; -> we will keep invariant of a class;

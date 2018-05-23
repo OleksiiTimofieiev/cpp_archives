@@ -1,0 +1,8 @@
+- class <=> class;
+- var of the class is the object;
+
+- new can malloc and call a constructor;
+
+- we can create array of the objects;
+
+- object can be created according to the address;

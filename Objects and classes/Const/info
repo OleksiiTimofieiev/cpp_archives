@@ -1,0 +1,11 @@
+- to keep the data without changes; no changes during the prog execution;
+
+- const pointer;
+
+- feature of non copying the object;
+
+- rvalue can be used;
+
+- const methods;
+
+- mutable -> cab be changed in const methods;

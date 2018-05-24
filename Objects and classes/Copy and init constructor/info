@@ -1,0 +1,5 @@
+- objects can be copied;
+
+- copy constructor;
+
+- copy can be forbidden;

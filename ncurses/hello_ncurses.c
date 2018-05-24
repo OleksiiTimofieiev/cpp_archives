@@ -4,7 +4,7 @@ int		main(void)
 {
 	// 1.
 	
-	// initscr(); // create stdstr;
+	// initscr(); // create stdstr (init screen);
 	// raw();
 	// printw("Hello world");
 	// getch(); // ayatem pause;
@@ -33,12 +33,17 @@ int		main(void)
  // 	endwin(); //fre the memory on the init screen; 	
 
 	// 4.
-	initscr(); // create stdstr;
+	initscr(); // create stdstr, create screen, allocate memory;
+
+	refresh() // refreshes the screen to match what is in memory;
+
 	raw();
+	
 	attron(A_STANDOUT | A_UNDERLINE); // add the attributes;
 	mvprintw(12,40,"asaadf");
 	attroff(A_STANDOUT | A_UNDERLINE);
- 	getch();
+ 	int c = getch(); // whaits till we press a key, returns int value of that key;
+
  	endwin(); //fre the memory on the init screen; 	
 	return (0);
 }

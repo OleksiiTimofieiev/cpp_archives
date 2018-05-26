@@ -40,6 +40,7 @@ int		main(void)
 	raw();
 	
 	attron(A_STANDOUT | A_UNDERLINE); // add the attributes;
+	A_REVERSE -> change background to foreground;
 	mvprintw(12,40,"asaadf");
 	attroff(A_STANDOUT | A_UNDERLINE);
  	int c = getch(); // whaits till we press a key, returns int value of that key;
@@ -80,6 +81,9 @@ int		main(void)
  	// mask the user input;
  	raw(); // show the input;
  	noecho(); // will not show the user input;
+
+ 	// we need to use color pairs to apply different color to the reminal and
+ 	 // we also need a preliminary check if we can change color therough a terminal;
 
 
 

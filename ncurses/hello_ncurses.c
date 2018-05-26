@@ -18,10 +18,10 @@ int		main(void)
 	// addch('a');
 	// move(12,13); // mpve the cursor (y, x);
 
- // 	mvprintw(15, 20, "Movement"); // column ,row;
- // 	mvaddch(12,50,'0');
- // 	getch();
- // 	endwin(); //fre the memory on the init screen;
+ 	// 	mvprintw(15, 20, "Movement"); // column ,row;
+ 	// 	mvaddch(12,50,'0');
+ 	// 	getch();
+ 	// 	endwin(); //fre the memory on the init screen;
 
  	// 3.
 	// initscr(); // create stdstr;
@@ -29,8 +29,8 @@ int		main(void)
 	// attron(A_STANDOUT | A_UNDERLINE); // add the attributes;
 	// mvprintw(12,40,"asaadf");
 	// attroff(A_STANDOUT | A_UNDERLINE);
- // 	getch();
- // 	endwin(); //fre the memory on the init screen; 	
+ 	// 	getch();
+ 	// 	endwin(); //fre the memory on the init screen; 	
 
 	// 4.
 	initscr(); // create stdstr, create screen, allocate memory;

@@ -1,0 +1,23 @@
+- Some procedure during the start <-> game logo or etc.
+- If the enemy and some iterator + shot are equal -> we kill an enemy -> we just do not show the instance;
+- Within several steps we show the enemy
+- Ship is some kind of figure in the terminal;
+- https://www.youtube.com/watch?v=GTRL9EAC_rs <-> different ships; https://www.youtube.com/watch?v=GTRL9EAC_rs
+- Collision <- something connected to the figures coordinates <- it square;
+- Get if the corresponding points til the length of the shot is occupied by the enemy;
+
+ncurses:
+
+- https://www.youtube.com/watch?v=Cg_u60jX8Y4
+- https://www.viget.com/articles/game-programming-in-c-with-the-ncurses-library/
+- http://tldp.org/HOWTO/NCURSES-Programming-HOWTO/
+- http://techlister.com/linux/creating-menu-with-ncurses-in-c/1293/
+- https://www.youtube.com/watch?v=tVWckBaB5xo https://www.youtube.com/watch?v=_pH5xVN73VQ
+- https://www.youtube.com/watch?v=UoBozexLMxs&list=PLlsuHJMV8nt45KTBLQ2VOQ8Nru-1YJzk_
+
+bonus stuff:
+- system("afplay -t 20 ./mp3/laser.mp3 
+- O fur tuna
+- Adios sound
+
+

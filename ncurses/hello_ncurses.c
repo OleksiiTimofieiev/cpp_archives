@@ -89,6 +89,8 @@ int		main(void)
  	getbgyx(); // get beginning yx;
  	getmaxyx(); // max heights and width;
 
+ 	keypad(); // we can use arroe keys;
+
 
 
 

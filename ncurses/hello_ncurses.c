@@ -85,7 +85,11 @@ int		main(void)
  	// we need to use color pairs to apply different color to the reminal and
  	 // we also need a preliminary check if we can change color therough a terminal;
 
+ 	getyx(); // get current position of the cursor;
+ 	getbgyx(); // get beginning yx;
+ 	getmaxyx(); // max heights and width;
 
+ 	keypad(); // we can use arroe keys;
 
 
 

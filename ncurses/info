@@ -1,0 +1,10 @@
+- in order to place the commands to the screen it in necessary to use refresh or wregresh (to the specific section of the window);
+
+- refresh -> for the whole window;
+- wrefresh -> only for the selected area;
+
+- think about the window terminal as a list of layers and a containers of memory to be changed bu the commands;
+
+- refresh -> update the standard screen (container of all contatiners);
+
+- std screen and actual window;

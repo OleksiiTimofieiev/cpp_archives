@@ -1,0 +1,3 @@
+- inheritance is anmechanism whick allows to create child classes expanding the already available ones;
+
+- no default constructor or destructor -> set them explicitly;

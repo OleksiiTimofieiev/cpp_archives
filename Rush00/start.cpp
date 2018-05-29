@@ -1,7 +1,7 @@
 #include <ncurses.h>
 #include <unistd.h>
 
-#define DELAY 30000
+#define DELAY 50000
 
 int main(int argc, char *argv[]) {
  int x = 0, y = 0;
@@ -21,6 +21,10 @@ int main(int argc, char *argv[]) {
  	shot_y = 5;
  	shot_x = 5;
 
+ int monstr_y = 5;
+ int monstr_x = 100;
+ int j = 0;
+
 
 
 int shot_distance = 0;
@@ -31,6 +35,25 @@ int shot_distance = 0;
  clear();
  mvprintw(y, x, "o");
  mvprintw(shot_y, shot_x, "-");
+ if (shot_distance == 40)
+ {
+ 	mvprintw(shot_y, shot_x, " ");
+
+ }
+
+ if (monstr_y == shot_y && monstr_x == shot_x)
+ {
+ 	mvprintw(monstr_y, monstr_x, "killed");
+ 	mvprintw(monstr_y, monstr_x, "      ");
+ 	j = 1;
+ 	// usleep(60000);
+
+ // usleep(DELAY);
+}
+else
+{
+	mvprintw(monstr_y, monstr_x, "*");
+}
 
  refresh();
 
@@ -46,11 +69,13 @@ int shot_distance = 0;
  {
  x+= direction;
   }
-	if (shot_distance < 20)
+	if (j != 1)
 	{
 		shot_x += 1;
 		shot_distance++;
 	}
+
+
  }
 
  // if (shot_distance < 10)

@@ -8,3 +8,7 @@
 - refresh -> update the standard screen (container of all contatiners);
 
 - std screen and actual window;
+
+ - http://www.cs.ukzn.ac.za/~hughm/os/notes/ncurses.html#using
+
+ - http://www.ibiblio.org/pub/Linux/docs/HOWTO/other-formats/pdf/NCURSES-Programming-HOWTO.pdf

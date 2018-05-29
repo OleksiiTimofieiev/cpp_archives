@@ -32,10 +32,14 @@ int shot_distance = 0;
 
 int monstr_moves = 1;
 
+char monstr[4] = {'*', '*', '*', '\0'};
+char monstr1[4] = {'*', '*', '*', '\0'};
+
+
  while(1) 
  {
 	 getmaxyx(stdscr, max_y, max_x);
-	 clear();
+	 clear(); // cleats all objects on the screen;
 
 	 mvprintw(y, x, "o");
 	 mvprintw(shot_y, shot_x, "-");
@@ -45,8 +49,8 @@ int monstr_moves = 1;
 	 	// mvprintw(shot_y, shot_x, " ");
 // 
 	 // }
-	 // if (shot_distance == 40)
-	 // 	mvprintw(shot_y, shot_x, " ");
+	 if (shot_distance == 20)
+	 	mvprintw(shot_y, shot_x, " ");
 
 	 if (monstr_y == shot_y && monstr_x == shot_x - 1)
 	 {
@@ -62,7 +66,9 @@ int monstr_moves = 1;
 	 	mvprintw(10,10, "%d", monstr_x);
 	 	mvprintw(11,10, "%d", shot_x);
 
-		mvprintw(monstr_y, monstr_x--, "-");
+		mvprintw(monstr_y, monstr_x, "%s", monstr);
+		mvprintw(monstr_y + 1, monstr_x, "%s", monstr1);
+		monstr_x--;
 
 		// monstr_x--;
 	}

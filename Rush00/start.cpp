@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 
  int monstr_y = 5;
  int monstr_x = 40;
- int j = 0;
+ int j = 1;
 
 
 
@@ -39,14 +39,20 @@ int monstr_moves = 1;
 
 	 mvprintw(y, x, "o");
 	 mvprintw(shot_y, shot_x, "-");
+	 // if (j == 0)
+	 // {
+	 	// one time;
+	 	// mvprintw(shot_y, shot_x, " ");
+// 
+	 // }
 	 // if (shot_distance == 40)
 	 // 	mvprintw(shot_y, shot_x, " ");
 
-	 if (monstr_y == shot_y && monstr_x == shot_x-1)
+	 if (monstr_y == shot_y && monstr_x == shot_x - 1)
 	 {
 	 	mvprintw(monstr_y, monstr_x, "killed");
 	 	mvprintw(monstr_y, monstr_x, "      ");
-	 	j = 1;
+	 	j = 0;
 	 	// usleep(60000);
 
 	 // usleep(DELAY);
@@ -75,11 +81,18 @@ int monstr_moves = 1;
 	 {
 	 x+= direction;
 	  }
-		if (j != 1)
+		if (j && shot_distance < 20)
 		{
-			shot_x += 1;
+			shot_x += 1; // start coordinates of the shot;
 			shot_distance++;
 		}
+		// else
+		// {
+		// 	shot_x = -1;
+		// 	shot_y = -1;
+		// }
+		// else
+			// shot_x = -1;
 
 
  }

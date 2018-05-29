@@ -1,6 +1,8 @@
 #include <ncurses.h>
 #include <unistd.h>
 
+// use defines fot any modifieble parameter for the player of the enemy;
+
 #define DELAY 100000
 
 int main(int argc, char *argv[]) {

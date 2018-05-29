@@ -1,7 +1,7 @@
 #include <ncurses.h>
 #include <unistd.h>
 
-#define DELAY 50000
+#define DELAY 100000
 
 int main(int argc, char *argv[]) {
  int x = 0, y = 0;
@@ -22,58 +22,64 @@ int main(int argc, char *argv[]) {
  	shot_x = 5;
 
  int monstr_y = 5;
- int monstr_x = 100;
+ int monstr_x = 40;
  int j = 0;
 
 
 
 int shot_distance = 0;
 
+
+int monstr_moves = 1;
+
  while(1) 
  {
- getmaxyx(stdscr, max_y, max_x);
- clear();
- mvprintw(y, x, "o");
- mvprintw(shot_y, shot_x, "-");
- if (shot_distance == 40)
- {
- 	mvprintw(shot_y, shot_x, " ");
+	 getmaxyx(stdscr, max_y, max_x);
+	 clear();
 
- }
+	 mvprintw(y, x, "o");
+	 mvprintw(shot_y, shot_x, "-");
+	 // if (shot_distance == 40)
+	 // 	mvprintw(shot_y, shot_x, " ");
 
- if (monstr_y == shot_y && monstr_x == shot_x)
- {
- 	mvprintw(monstr_y, monstr_x, "killed");
- 	mvprintw(monstr_y, monstr_x, "      ");
- 	j = 1;
- 	// usleep(60000);
+	 if (monstr_y == shot_y && monstr_x == shot_x-1)
+	 {
+	 	mvprintw(monstr_y, monstr_x, "killed");
+	 	mvprintw(monstr_y, monstr_x, "      ");
+	 	j = 1;
+	 	// usleep(60000);
 
- // usleep(DELAY);
-}
-else
-{
-	mvprintw(monstr_y, monstr_x, "*");
-}
-
- refresh();
-
- usleep(DELAY);
-
- next_x = x + direction;
-
- if (next_x >= max_x || next_x < 0)
-  {
- direction*= -1;
- } 
- else
- {
- x+= direction;
-  }
-	if (j != 1)
-	{
-		shot_x += 1;
-		shot_distance++;
+	 // usleep(DELAY);
 	}
+	else
+	{
+	 	mvprintw(10,10, "%d", monstr_x);
+	 	mvprintw(11,10, "%d", shot_x);
+
+		mvprintw(monstr_y, monstr_x--, "-");
+
+		// monstr_x--;
+	}
+
+	 refresh();
+
+	 usleep(DELAY);
+
+	 next_x = x + direction;
+
+	 if (next_x >= max_x || next_x < 0)
+	  {
+	 direction*= -1;
+	 } 
+	 else
+	 {
+	 x+= direction;
+	  }
+		if (j != 1)
+		{
+			shot_x += 1;
+			shot_distance++;
+		}
 
 
  }

@@ -4,3 +4,11 @@
 - constructor of the parent has to be set explicitly;
 
 - first ot be called the destructor of the inheritance class and then the parent class;
+
+- Pointers to the object of a class has to initialized through a parent class data type;
+
+- relavent fields of the parent class can be copied from the parent class through pointers (it is possible because we have its address);
+
+- we can`t use the private fields of the parent class if they has been declared as private;
+
+- protected variables can be used only by the child of the class;

@@ -1,3 +1,6 @@
 - inheritance is anmechanism whick allows to create child classes expanding the already available ones;
 
 - no default constructor or destructor -> set them explicitly;
+- constructor of the parent has to be set explicitly;
+
+- first ot be called the destructor of the inheritance class and then the parent class;

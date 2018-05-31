@@ -1,0 +1,6 @@
+- redifinition of methods during inheritance;
+
+- virtual (abstract) methods <-> methods which do not have the realization;
+- const = 0; <- criteria of no realization;
+
+- abstract class do not give the possibility of creation of the class object;

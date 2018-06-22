@@ -1,0 +1,5 @@
+// how to call the constructor of the parent
+// how to make sure that the destructors of the both classes have been executed;
+// encapsulation level of inheritance
+// multiple inheritance not from the parent class from a child also
+// diamond diemd inheritage;

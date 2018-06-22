@@ -1,0 +1,22 @@
+- ad-hoc polymorphism = function overload <=> many different funcs with the same name and taking different parameters;
+	~ prefix notation = functional notation;
+	~ infix notation (1 + 1);
+	~ postfix notatiion (1 1 +) = polish reversed notation;
+	~ notation is more similar as a member function;
+	~ 1.+ ( 1 ) -> we have a random instance on which we will call a '+' member function to which we pass random 1;
+	~ + ( 1, 1 ) <-> simple func taking two parameters;
+	~ we can have operator overloads;
+	~ for the decremantation or incrementation -> (); simple is enough;
+	~ also there are post inc and dec-remantation;
+	~ overload must be natural;
+	~ ? : functer;
+	~ MyClass b = a <=> MyClass b(a);
+
+
+
+
+
+
+- operatot overload = define new operators => overload function corresponding to the operator or atleast most c++ operators;
+
+- canonical form of the class (unified use for all of the classes);

@@ -26,4 +26,12 @@ boolean data type;
 
 - inheritance:
 
-? modifiers of inheritance;
+- polimorphithm <-> virtual (one of the methods for realization of te polymorphizm), we will have the possibility to redo the method in the inherited instance;
+
+											void shoot () override;
+~ always use override to detect the right signature for the virtual methods indicated in parent class;
+~ sample:
+
+Gun * weapon = &machinegun;
+
+weapon->shoot(); -> will be used the method of the child class;

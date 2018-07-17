@@ -1,0 +1,37 @@
+boolean data type;
+
+- overloading <-> can be used created with the same identifier, but with the different signature (params, return value, etc.);
+
+- reference <-> keeps the address where the data allocated. To work with original -> not with a copy (int & var), can be used to return several values;
+
+- const:
+
+~ const int var <-> const of the var value;
+~ int * const var <-> new memory for the pointer can not be allocated;
+~ const int * const var <-> new memory for the pointer can not be allocated and the values can not be modified;
+
+- constructor types:
+
+~ init list;
+~ default;
+~ overloaded;
+
+- static fields of the class <-> can be used as "id creator";
+
+- static methods of the class <-> access the variables globally (for example, for initialization);
+
+- nested / inner class <-> for the single use only;
+
+- array of objects;
+
+- inheritance:
+
+- polimorphithm <-> virtual (one of the methods for realization of te polymorphizm), we will have the possibility to redo the method in the inherited instance;
+
+											void shoot () override;
+~ always use override to detect the right signature for the virtual methods indicated in parent class;
+~ sample:
+
+Gun * weapon = &machinegun;
+
+weapon->shoot(); -> will be used the method of the child class;

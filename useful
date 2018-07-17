@@ -35,3 +35,5 @@ boolean data type;
 Gun * weapon = &machinegun;
 
 weapon->shoot(); -> will be used the method of the child class;
+
+- virtual destructor should be used with new when the pointer refers to the parent class;

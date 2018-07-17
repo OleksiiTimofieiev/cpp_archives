@@ -1,1 +1,3 @@
-- overloading <-> can be used created with the same identifier, but with the different signature;
+- overloading <-> can be used created with the same identifier, but with the different signature (params, return value, etc.);
+
+- reference <-> keeps the address where the data allocated. To work with original -> not with a copy;

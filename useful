@@ -41,5 +41,8 @@ weapon->shoot(); -> will be used the method of the child class;
 - constructor delegate <-> in order to delegate some stuff to other constructor of the class <-> better syntax of the constructor;
 ~ Human (string ...): Human (Name);
 
-- multiple inheritance <-> inheritance from the different classes;
-~
+- multiple inheritance (diamond inheritance) <-> inheritance from the different classes;
+
+- interface;
+
+- try catch -> to work out planned mistakes, etc.

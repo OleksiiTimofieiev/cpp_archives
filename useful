@@ -1,4 +1,4 @@
-boolean data type;
+- boolean data type;
 
 - overloading <-> can be used created with the same identifier, but with the different signature (params, return value, etc.);
 
@@ -51,3 +51,5 @@ weapon->shoot(); -> will be used the method of the child class;
 ~ several blocks of exception;
 ~ catch (...);
 ~ custom exception class;
+
+- enum;

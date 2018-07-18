@@ -47,3 +47,4 @@ weapon->shoot(); -> will be used the method of the child class;
 
 - try catch -> to work out planned mistakes, etc.
 ~ throw;
+~ use exception class;

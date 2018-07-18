@@ -37,3 +37,9 @@ Gun * weapon = &machinegun;
 weapon->shoot(); -> will be used the method of the child class;
 
 - virtual destructor should be used with new when the pointer refers to the parent class;
+
+- constructor delegate <-> in order to delegate some stuff to other constructor of the class <-> better syntax of the constructor;
+~ Human (string ...): Human (Name);
+
+- multiple inheritance <-> inheritance from the different classes;
+~

@@ -46,3 +46,4 @@ weapon->shoot(); -> will be used the method of the child class;
 - interface;
 
 - try catch -> to work out planned mistakes, etc.
+~ throw;

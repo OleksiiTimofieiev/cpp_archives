@@ -53,3 +53,4 @@ weapon->shoot(); -> will be used the method of the child class;
 ~ custom exception class;
 
 - enum;
+~ max = 100500;

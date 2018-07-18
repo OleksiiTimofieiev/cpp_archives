@@ -50,3 +50,4 @@ weapon->shoot(); -> will be used the method of the child class;
 ~ use exception class;
 ~ several blocks of exception;
 ~ catch (...);
+~ custom exception class;

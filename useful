@@ -71,3 +71,5 @@ weapon->shoot(); -> will be used the method of the child class;
 - for each: iterate with containers, check out the collectiion of the elements (mainly for stl library);
 
 - union;
+
+- std::function <-> polimorphed function; 

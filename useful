@@ -68,3 +68,5 @@ weapon->shoot(); -> will be used the method of the child class;
 
 - auto: automatic data type handling, can be used for anythinf;
 
+- for each: iterate with containers, check out the collectiion of the elements;
+

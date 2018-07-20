@@ -62,3 +62,5 @@ weapon->shoot(); -> will be used the method of the child class;
 ~ can use a class as data type;
 
 - smart pointers:
+~ auto <->
+~ unique <->

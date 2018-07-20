@@ -54,3 +54,9 @@ weapon->shoot(); -> will be used the method of the child class;
 
 - enum;
 ~ max = 100500;
+
+- template functions;
+~ type during compilation;
+
+- template class:
+~ can use a class as data type;

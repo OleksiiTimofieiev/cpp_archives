@@ -72,4 +72,4 @@ weapon->shoot(); -> will be used the method of the child class;
 
 - union;
 
-- std::function <-> polimorphed function; 
+- std::function <-> polimorphed function (array of functions + enum); 

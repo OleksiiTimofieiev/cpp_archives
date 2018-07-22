@@ -73,3 +73,5 @@ weapon->shoot(); -> will be used the method of the child class;
 - union;
 
 - std::function <-> polimorphed function (array of functions + enum); 
+
+- i_o_fsream -> fstream = to have different modes in one source code;
